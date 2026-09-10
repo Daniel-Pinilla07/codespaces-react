@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align:center;
+  color: #5ab95a;
+}
+/* Esto cambia el diseño de absolutamente todos los botones */
+body button {
+  background-color: #28a745;
+  color: white;
+  padding: 24px 48px;
+  border-radius: 16px;
 }
 
 code {

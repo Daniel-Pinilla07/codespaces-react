@@ -1,29 +1,23 @@
 import './App.css';
+//Crear un Componente
+function Person(props){
+  return(
+    <div className="person" style = {{backgroundColor: props.color}}>
+      <h3>Nombre: {props.nombre}</h3>
+      <p>Edad: {props.edad}</p>
+      <p>Salario: {props.salario}</p>
+    </div>
+  )
+}
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <h1>Hola mundo</h1>
+      {/*Esto es un comentario*/}
+      <Person nombre="Richi" edad="19" salario="9999999" color = "#90d5ff"/>
+      <Person nombre="Juancho" edad="20" salario="999999"/>
+      <Person nombre="Matius" edad="20" salario="999999"color = "#6cb8e7"/>
     </div>
   );
 }
-
-export default App;
